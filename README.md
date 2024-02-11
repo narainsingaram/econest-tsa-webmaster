@@ -1,3 +1,3 @@
 # TSA Webmaster
 
-Created by: Narain Singara, Mithran Prakash, and Nithin Venkatesh
+Created by: Narain Singaram, Mithran Prakash, and Nithin Venkatesh
