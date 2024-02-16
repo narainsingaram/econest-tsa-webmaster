@@ -28,39 +28,89 @@
     </a>
   </div>
   
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">EnvironmentalAgency</span>
-    </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
-        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
+  <header class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <a class="block text-teal-600" href="#">
+            <span class="sr-only">Home</span>
+            <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                fill="currentColor"
+              />
+            </svg>
+            SaveTheEnvironment
+          </a>
+        </div>
+  
+        <div class="hidden md:block">
+          <nav aria-label="Global">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
+              </li>
+  
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
+              </li>
+  
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
+              </li>
+  
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
+              </li>
+  
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
+              </li>
+  
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+              href="#"
+            >
+              Login
+            </a>
+  
+            <div class="hidden sm:flex">
+              <a
+                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                href="#"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+  
+          <div class="block md:hidden">
+            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
+  </header>
   
 
   <section class="bg-white bg-gradient-to-r from-green-700 via-green-800 to-green-900">
@@ -170,6 +220,21 @@
     </div>
 </section>
 
+<section class="bg-green-50">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">The Promise of Clean Energy</h2>
+            <p class="mb-4"> As environmental concerns grow and fossil fuels decline, clean energy has become vital. Unlike traditional energy sources that pollute and will run out, renewable sources like solar, wind, hydroelectric, and geothermal harness nature's power sustainably. Transitioning to clean energy not only preserves the environment but paves the way for healthier future generations. From flipping light switches to exploring renewable options, small acts contribute to a more sustainable future. Clean energy offers a promising solution for society's energy needs while minimizing environmental harm.
+                .</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+        </div>
+    </div>
+</section>
+
+
 <!-- Features -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <div class="relative p-6 md:p-16">
@@ -258,134 +323,125 @@
   </div>
   <!-- End Features -->
 
-  <section class="bg-emerald-50">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-md mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-                6 Types of Green Energy for Your Sustainable Home</h2>
-            <p class="text-gray-500 sm:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-        </div>
-        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+  <section class="bg-emerald-50 py-12">
+    <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 lg:mb-12">6 Types of Green Energy for Your Sustainable Home</h2>
+        <p class="text-gray-600 lg:text-lg mb-8">Explore a variety of eco-friendly energy options tailored for your sustainable lifestyle. Discover how you can harness renewable resources to power your home efficiently</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Solar Power -->
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+                <div class="p-4 md:p-5">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    Solar Power
+                  </h3>
+                  <p class="mt-1 text-gray-500">
+                    Convert sunlight directly into electricity using photovoltaic (PV) panels installed on your roof. This clean and reliable source works best in sunny regions and requires minimal maintenance.
+                  </p>
+                  <a class="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                    Go somewhere
+                  </a>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Solar Power</h3>
-                <p class="text-gray-500"><ul>
-                    <li><b>Description:</b> Convert sunlight directly into electricity using photovoltaic (PV) panels installed on your roof. This clean and reliable source works best in sunny regions and requires minimal maintenance.</li>
-                    <li><b>Efficiency:</b> Highly efficient, especially in areas with consistent sunlight. Can generate enough electricity to power your entire home and potentially contribute to the grid.</li>
-                    <li><b>Installation:</b> Varies depending on system size and roof suitability. Professional installation is recommended to ensure optimal performance and safety.</li>
-                    <li><b>Cost:</b> Higher upfront cost, but offset by government rebates, net metering programs, and long-term energy savings. Increased property value is an added benefit.</li>
-                    <li><b>Pros:</b> Clean and renewable energy source, low maintenance, increased property value.</li>
-                    <li><b>Cons:</b> High upfront cost, reliant on sunlight availability, requires suitable roof space.</li>
-                    <li><b>Environmental Impact:</b> Reduces greenhouse gas emissions and air pollution, minimizes water usage.</li>
-                    </ul></p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
+              </div>
+            <!-- Wind Power -->
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+                <div class="p-4 md:p-5">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    Wind Power
+                  </h3>
+                  <p class="mt-1 text-gray-500">
+                    Generate electricity from the wind using small turbines installed on your property. This option is most effective in windy locations with good wind resource potential.
+                  </p>
+                  <a class="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                    Go somewhere
+                  </a>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Wind Power</h3>
-                <p class="text-gray-500"><ul>
-                    <li><b>Description:</b> Generate electricity from the wind using small turbines installed on your property. This option is most effective in windy locations with good wind resource potential.</li>
-                    <li><b>Efficiency:</b> Works well in areas with consistent wind speeds. Efficiency fluctuates based on wind conditions, requiring a larger system to guarantee stable power generation.</li>
-                    <li><b>Installation:</b> More complex installation compared to solar due to technical considerations. Permits and professional installation are crucial for safety and compliance.</li>
-                    <li><b>Cost:</b> Moderate upfront cost, with potential financial incentives available depending on your location. Consider the visual and noise impact on your property and surroundings.</li>
-                    <li><b>Pros:</b> Clean and renewable energy source, efficient in windy locations.</li>
-                    <li><b>Cons:</b> Reliant on wind availability, complex installation, potential visual and noise impact.</li>
-                    <li><b>Environmental Impact:</b> Reduces greenhouse gas emissions and air pollution, but requires careful planning to minimize wildlife impact.</li>
-                    </ul></p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>                    
+              </div>
+            <!-- Geothermal Energy -->
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+                <div class="p-4 md:p-5">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    Geothermal Energy
+                  </h3>
+                  <p class="mt-1 text-gray-500">
+                    Tap into the Earth's internal heat to provide heating, cooling, and hot water for your home. This reliable and efficient option works regardless of weather conditions.
+                  </p>
+                  <a class="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                    Go somewhere
+                  </a>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Geothermal Energy</h3>
-                <p class="text-gray-500"><ul>
-                    <li><b>Description:</b> Tap into the Earth's internal heat to provide heating, cooling, and hot water for your home. This reliable and efficient option works regardless of weather conditions.</li>
-                    <li><b>Efficiency:</b> Highly efficient and stable source, offering year-round comfort and minimal maintenance.</li>
-                    <li><b>Installation:</b> More complex and expensive installation compared to other options due to drilling and system setup. Geothermal potential varies significantly depending on your location.</li>
-                    <li><b>Cost:</b> Significant upfront cost, but qualifies for tax credits and offers long-term cost savings on energy bills. Consider conducting a feasibility study to assess your property's potential.</li>
-                    <li><b>Pros:</b> Clean and renewable energy source, reliable and efficient, minimal maintenance.</li>
-                    <li><b>Cons:</b> High upfront cost, complex installation, not suitable for all locations.</li>
-                    <li><b>Environmental Impact:</b> Reduces greenhouse gas emissions and air pollution, minimizes water usage, requires responsible water management.</li>
-                    </ul></p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
+              </div>
+            <!-- Hydropower -->
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+                <div class="p-4 md:p-5">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    Hydropower
+                  </h3>
+                  <p class="mt-1 text-gray-500">
+                    Utilize the power of moving water to generate electricity. This option often involves installing a small-scale turbine in a flowing stream or canal on your property.
+                  </p>
+                  <a class="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                    Go somewhere
+                  </a>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Hydropower</h3>
-                <p class="text-gray-500"><ul>
-                    <li><b>Description:</b> Utilize the power of moving water to generate electricity. This option often involves installing a small-scale turbine in a flowing stream or canal on your property.</li>
-                    <li><b>Efficiency:</b> Highly efficient in areas with consistent water flow and suitable topography. Offers clean and reliable power generation with minimal environmental impact.</li>
-                    <li><b>Installation:</b> Complex installation process requiring permits, professional expertise, and adherence to environmental regulations.</li>
-                    <li><b>Cost:</b> Significant upfront cost due to custom system design and installation. Feasibility and financial viability depend heavily on specific site conditions and regulations.</li>
-                    <li><b>Pros:</b> Clean and renewable energy source, highly efficient, reliable power generation.</li>
-                    <li><b>Cons:</b> High upfront cost, complex installation, limited potential for new development.</li>
-                    <li><b>Environmental Impact:</b> Reduces greenhouse gas emissions and air pollution, helps conserve fossil fuels, requires careful consideration of ecological and social factors.</li>
-                    </ul></p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+              </div>
+            <!-- Biomass Energy -->
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+                <div class="p-4 md:p-5">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    Biomass Energy
+                  </h3>
+                  <p class="mt-1 text-gray-500">
+                    Convert organic matter like wood chips, pellets, or agricultural waste into electricity or heat through combustion or gasification processes.
+                  </p>
+                  <a class="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                    Go somewhere
+                  </a>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Biomass Energy</h3>
-                <p class="text-gray-500">
-                    <ul>
-                    <li><b>Description:</b> Convert organic matter like wood chips, pellets, or agricultural waste into electricity or heat through combustion or gasification processes.</li>
-                    <li><b>Efficiency:</b> Offers renewable energy but with potential emissions depending on the biomass source and conversion technology. Consider sustainability practices and local regulations.</li>
-                    <li><b>Installation:</b> Varies depending on the chosen system and fuel source. May require dedicated storage space for the biomass fuel.</li>
-                    <li><b>Cost:</b> Moderate upfront cost, offset by potential incentives based on the type of biomass used and conversion technology. Consider ongoing fuel costs and maintenance needs.</li>
-                    <li><b>Pros:</b> Renewable and readily available fuel source, potential for local energy independence.</li>
-                    <li><b>Cons:</b> Emissions can vary, requires sustainable sourcing, potential deforestation concerns.</li>
-                    <li><b>Environmental Impact:</b> Can be carbon-neutral if sustainably managed and using appropriate technologies. Requires careful assessment of emissions and potential for habitat loss.</li>
-                    </ul></p>
-            </div>
-            <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+              </div>
+            <!-- Combined Heat and Power (CHP) -->
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+                <div class="p-4 md:p-5">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    Combined Heat and Power (CHP)
+                  </h3>
+                  <p class="mt-1 text-gray-500">
+                    Generate both electricity and useful heat from the same energy source, offering increased efficiency compared to separate generation.
+                  </p>
+                  <a class="mt-2 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                    Go somewhere
+                  </a>
                 </div>
-                <h3 class="mb-2 text-xl font-bold">Combined Heat and Power (CHP)</h3>
-                <p class="text-gray-500"><ul>
-                    <li><b>Description:</b> Generate electricity and heat simultaneously using a single fuel source like natural gas or biomass. This highly efficient system minimizes energy waste and provides cost savings.</li>
-                    <li><b>Efficiency:</b> Offers excellent energy utilization rates, reducing overall energy consumption and environmental impact.</li>
-                    <li><b>Installation:</b> Complex installation process requiring professional expertise and compliance with regulations. Suitable for larger buildings or communities with high energy demands.</li>
-                    <li><b>Cost:</b> Significant upfront cost due to system complexity, but offers long-term cost savings and improved energy efficiency.</li>
-                    <li><b>Pros:</b> Highly efficient system, reduces energy consumption and emissions, cost savings.</li>
-                    <li><b>Cons:</b> High upfront cost, complex installation, not widely available.</li>
-                    <li><b>Environmental Impact:</b> Significantly reduces greenhouse gas emissions and air pollution. Conserves fossil fuels and other energy resources. Requires careful planning and operation to maximize efficiency and minimize environmental impact.</li>
-                    </ul></p>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="bg-white dark:bg-gray-900">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
-        <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
-        <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's create more tools and ideas that brings us together.</h2>
-            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Flowbite helps you connect with friends and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.</p>
-            <a href="#" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-                Get started
-                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
+              </div>
         </div>
     </div>
 </section>
 
-<section class="bg-white dark:bg-gray-900">
-    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-            <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+
+  <section class="bg-white">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <img class="w-full hidden dark:block rounded-xl" src="./assets\images\infographic.jpg" alt="dashboard image">
+        <div class="mt-4 md:mt-0">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">The State of Recycling Around the World</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg"> 
+                <h3 class="text-xl mb-4">This visually engaging infographic illustrates recycling statistics from around the globe, exploring questions like:</h3>
+                <ul class="list-disc list-inside">
+                    <li>What regions have the highest and lowest recycling rates?</li>
+                    <li>How much waste is produced per capita across different countries?</li>
+                    <li>Which nations lead the way in recycling innovations and infrastructure?</li>
+                    <li>How do recycling rates correlate with factors like wealth, urbanization, environmental policies, etc.?</li>
+                    <li>What are the global disparities when it comes to recycling access and culture?</li>
+                </ul>
+            </p>            
+            <a href="#" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                Get started
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
         </div>
     </div>
 </section>
