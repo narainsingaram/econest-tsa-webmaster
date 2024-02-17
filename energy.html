@@ -179,13 +179,13 @@
     </div>
     
 
-    <div class="quiz-container">
-        <h1>Clean Energy Quiz</h1>
+    <div class="quiz-container bg-white rounded-xl shadow p-4 sm:p-7">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Clean Energy Quiz</h1>
         
         <form id="cleanEnergyQuiz">
             <div class="question">
                 <h2>1. Which seemingly ordinary fruit waste can be fermented to create bioethanol, a renewable fuel alternative?</h2>
-                <label class="answer"><input type="radio" name="q1" value="d"> Pineapples</label>
+                <label class="answer "><input type="radio" name="q1" value="d"> Pineapples</label>
                 <label class="answer"><input type="radio" name="q1" value="a"> Bananas</label>
                 <label class="answer"><input type="radio" name="q1" value="b"> Avocados</label>
                 <label class="answer"><input type="radio" name="q1" value="c"> Watermelons</label>
@@ -277,4 +277,51 @@
         </script>
         
 </body>
+
+<style>
+    .question {
+        margin-bottom: 1rem;
+    }
+
+    .question h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .answer {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .answer input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #4a5568;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+
+    .answer input[type="radio"]:checked {
+        background-color: #4a5568;
+    }
+
+    .submit-btn {
+        background-color: #4a5568;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #2d3748;
+    }
+</style>
+
 </html>
