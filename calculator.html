@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Energy Calculator</h1>
+    <div>
+      <label for="energyInput">Energy Consumption:</label>
+      <input type="number" id="energyInput" placeholder="Enter energy consumption">
+      <select id="energyUnit">
+        <option value="kWh">kWh</option>
+        <option value="MWh">MWh</option>
+      </select>
+    </div>
+    <div>
+      <label for="costInput">Cost:</label>
+      <input type="number" id="costInput" placeholder="Enter cost per unit energy">
+      <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+      </select>
+    </div>
+    <div>
+      <label for="carbonInput">Carbon Footprint:</label>
+      <input type="number" id="carbonInput" placeholder="Enter carbon emission factor">
+      <span>kg CO2/</span>
+      <select id="carbonUnit">
+        <option value="kWh">kWh</option>
+        <option value="MWh">MWh</option>
+      </select>
+    </div>
+    <div>
+      <label for="efficiencyInput">Efficiency:</label>
+      <input type="number" id="efficiencyInput" placeholder="Enter efficiency (%)">
+    </div>
+    <div>
+      <label for="metricSelect">Select Metric:</label>
+      <select id="metricSelect">
+        <option value="consumption">Energy Consumption</option>
+        <option value="cost">Cost</option>
+        <option value="carbon">Carbon Footprint</option>
+        <option value="efficiency">Efficiency</option>
+      </select>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const energyInput = document.getElementById("energyInput");
+  const energyUnit = document.getElementById("energyUnit");
+  const costInput = document.getElementById("costInput");
+  const currency = document.getElementById("currency");
+  const carbonInput = document.getElementById("carbonInput");
+  const carbonUnit = document.getElementById("carbonUnit");
+  const efficiencyInput = document.getElementById("efficiencyInput");
+  const metricSelect = document.getElementById("metricSelect");
+  const resultDiv = document.getElementById("result");
+
+  function calculate() {
+    const energy = parseFloat(energyInput.value);
+    const cost = parseFloat(costInput.value);
+    const carbon = parseFloat(carbonInput.value);
+    const efficiency = parseFloat(efficiencyInput.value);
+
+    let result;
+
+    switch (metricSelect.value) {
+      case "consumption":
+        result = energy;
+        break;
+      case "cost":
+        result = energy * cost;
+        break;
+      case "carbon":
+        result = energy * carbon;
+        break;
+      case "efficiency":
+        result = energy * (100 / efficiency);
+        break;
+      default:
+        result = 0;
+        break;
+    }
+
+    resultDiv.textContent = `Result: ${result.toFixed(2)} ${metricSelect.value === "cost" ? currency.value : metricSelect.value}`;
+  }
+
+  [energyInput, costInput, carbonInput, efficiencyInput, metricSelect].forEach(input => {
+    input.addEventListener("input", calculate);
+  });
+});
+
+</script>
