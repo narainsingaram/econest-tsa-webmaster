@@ -9,84 +9,88 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     </head>
-<body>
+<body class="bg-neutral-800">
     <!-- ========== MAIN CONTENT ========== -->
-<main id="content" role="main">
-    <div class="overflow-hidden">
       <!-- Header -->
-      <header class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 items-center justify-between">
-            <div class="md:flex md:items-center md:gap-12">
-              <a class="block text-emerald-600 text-3xl font-extrabold" href="index.html">
-                <span class="sr-only">Home</span>
-                EcoNest
-              </a>
-            </div>
-      
-            <div class="hidden md:block">
-              <nav aria-label="Global">
-                <ul class="flex items-center gap-6 text-sm">
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="index.html"> Home </a>
-                  </li>
-      
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="cost.html"> Cost </a>
-                  </li>
-      
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="energy.html"> Energy </a>
-                  </li>
-      
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="sources.html"> Sources </a>
-                  </li>
+      <header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+        <nav class="relative max-w-[66rem] w-full bg-neutral-800 rounded-[28px] py-3 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto" aria-label="Global">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex-none flex items-center rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80 text-white" href="../../templates/agency/index.html" aria-label="Preline">
+              <img class="w-10 h-10 mr-2" src="https://img.icons8.com/pulsar-gradient/96/tree.png" alt="tree"/>
+              <span class="text-lg md:text-2xl pt-1">EcoNest</span>
+            </a>
+            <!-- End Logo -->
     
-                </ul>
-              </nav>
+            <div class="md:hidden">
+              <button type="button" class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="3" x2="21" y1="6" y2="6" />
+                  <line x1="3" x2="21" y1="12" y2="12" />
+                  <line x1="3" x2="21" y1="18" y2="18" />
+                </svg>
+                <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+              </button>
             </div>
-      
-            <div class="flex items-center gap-4">
-              <div class="sm:flex sm:gap-4">
-      
-                <div class="hidden sm:flex">
-                  <a
-                    class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                    href="cost.html"
-                  >
-                    Take Action
-                  </a>
-                </div>
-              </div>
-      
-              <div class="block md:hidden">
-                <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </div>
+    
+          <!-- Collapse -->
+          <div id="navbar-collapse" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="index.html" aria-current="page">Home</a>
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="cost.html">Cost</a>
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="energy.html">Energy</a>
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="community.html">Community</a>
+    
+    
+    
+              <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:py-0.5">
+                <button type="button" class="flex items-center w-full text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300">
+                  Blog
+                  <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6" />
                   </svg>
                 </button>
+    
+                <div id="dropdown" class="z-10 hidden bg-black divide-y divide-gray-100 rounded-lg shadow w-44">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog 3</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="sources.html">References</a>
+    
+              <div>
+                <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#39FF14] font-medium text-sm text-neutral-800 rounded-full focus:outline-none" href="outage.html">
+                  Report Outage
+                </a>
               </div>
             </div>
           </div>
-        </div>
+          <!-- End Collapse -->
+        </nav>
       </header>
-
       <!-- Approach -->
-<div class="bg-neutral-900">
+<div class="bg-neutral-800 bg-gradient-to-t from-black to-transparent">
   <!-- Approach -->
   <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
     <!-- Title -->
     <div class="max-w-3xl mb-10 lg:mb-14">
-      <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">Our Approach</h2>
-      <p class="mt-1 text-neutral-400">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
+      <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">4-Step Process for Understanding Costs and Tax Rebates in Renewable Energy
+      </h2>
+      <p class="mt-1 text-neutral-400">Navigating the financial aspects of adopting renewable energy can seem daunting, but our streamlined 4-step process makes it easier to understand and manage costs, savings, and available incentives. Here’s a comprehensive guide to help you transition to clean energy smoothly and cost-effectively.</p>
     </div>
     <!-- End Title -->
 
@@ -122,8 +126,10 @@
           <!-- Right Content -->
           <div class="grow pt-0.5 pb-8 sm:pb-12">
             <p class="text-sm lg:text-base text-neutral-400">
-              <span class="text-white">Market Research and Analysis:</span>
-              Identify your target audience and understand their needs, preferences, and behaviors.
+              <span class="text-white">Evaluate your Energy Needs and Options :</span>
+              Conduct an energy audit to understand usage and explore renewable options. Obtain estimates for installation costs to lay the foundation for decision-making and ensure alignment with your budget.
+
+
             </p>
           </div>
           <!-- End Right Content -->
@@ -145,8 +151,9 @@
           <!-- Right Content -->
           <div class="grow pt-0.5 pb-8 sm:pb-12">
             <p class="text-sm lg:text-base text-neutral-400">
-              <span class="text-white">Product Development and Testing:</span>
-              Develop digital products or services that address the needs and preferences of your target audience.
+              <span class="text-white">Calculate Potential Savings and Payback Period :</span>
+              Compare costs, use online tools for projections, and determine the payback period for informed decision-making. This analysis helps you understand the financial benefits of renewable energy over time.
+
             </p>
           </div>
           <!-- End Right Content -->
@@ -168,8 +175,10 @@
           <!-- Right Content -->
           <div class="grow pt-0.5 pb-8 sm:pb-12">
             <p class="text-sm md:text-base text-neutral-400">
-              <span class="text-white">Marketing and Promotion:</span>
-              Develop a comprehensive marketing strategy to promote your digital products or services.
+              <span class="text-white">Explore Tax Rebates and Incentives :</span>
+              Research federal, state, and local incentives, including tax credits and grants, to reduce overall costs. Taking advantage of these incentives maximizes your savings and makes renewable energy more accessible.
+
+
             </p>
           </div>
           <!-- End Right Content -->
@@ -191,18 +200,15 @@
           <!-- Right Content -->
           <div class="grow pt-0.5 pb-8 sm:pb-12">
             <p class="text-sm md:text-base text-neutral-400">
-              <span class="text-white">Launch and Optimization:</span>
-              Launch your digital products or services to the market, closely monitoring their performance and user feedback.
+              <span class="text-white">Apply for Rebates and Financing :</span>
+              Gather documentation, apply for incentives, and explore financing options if needed, ensuring a smooth transition to renewable energy. By leveraging available resources, you can minimize upfront expenses and accelerate your journey toward sustainability.
+
             </p>
           </div>
           <!-- End Right Content -->
         </div>
         <!-- End Item -->
 
-        <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none" href="#">
-          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:delay-100 transition" d="M14.05 2a9 9 0 0 1 8 7.94"></path><path class="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition" d="M14.05 6A5 5 0 0 1 18 10"></path></svg>
-          Schedule a call
-        </a>
       </div>
       <!-- End Timeline -->
     </div>
@@ -212,9 +218,8 @@
 <!-- End Approach -->
       
     
-
-      <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<section class="bg-neutral-800 bg-gradient-to-b from-black to-transparent">
+<section class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div class="relative p-6 md:p-16">
     <!-- Grid -->
     <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
@@ -328,414 +333,33 @@
     </div>
     <!-- End Background Color -->
   </div>
-</div>
-<!-- End Features -->
+</section>
 
-    <div class="overflow-hidden bg-neutral-800">
-      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <!-- Title -->
-        <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
-          <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-neutral-200">
-            Solo, agency or team? We’ve got you covered.
-          </h2>
+  
+
+<section class="bg-neutral-800 bg-gradient-to-b from-green-950 to-transparent">
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="flex flex-col w-full mb-6 lg:justify-between lg:flex-row md:mb-8">
+    <div class="pl-16 flex items-center mb-5 md:mb-6 group lg:max-w-xl">
+      <a href="/" aria-label="Item" class="mr-3">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-indigo-50">
+          <svg class="w-12 h-12 text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+          </svg>
         </div>
-        <!-- End Title -->
-    
-        <div class="relative xl:w-10/12 xl:mx-auto">
-          <!-- Grid -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-            <div>
-              <!-- Card -->
-              <div class="p-4 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-neutral-900 dark:border-neutral-800">
-                <h3 class="text-xl font-bold text-gray-800 dark:text-neutral-200">Professional</h3>
-                <div class="text-sm text-gray-500 dark:text-neutral-500">Everything a small team needs.</div>
-    
-                <div class="mt-5">
-                  <span class="text-6xl font-bold text-gray-800 dark:text-neutral-200">$18</span>
-                  <span class="text-lg font-bold text-gray-800 dark:text-neutral-200">.00</span>
-                  <span class="ms-3 text-gray-500 dark:text-neutral-500">USD / monthly</span>
-                </div>
-    
-                <div class="mt-5 grid sm:grid-cols-2 gap-y-2 py-4 first:pt-0 last:pb-0 sm:gap-x-6 sm:gap-y-0">
-                  <!-- List -->
-                  <ul class="space-y-2 text-sm sm:text-base">
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Up to 10 people
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Collect data
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Code extensibility
-                      </span>
-                    </li>
-                  </ul>
-                  <!-- End List -->
-    
-                  <!-- List -->
-                  <ul class="space-y-2 text-sm sm:text-base">
-                    <li class="flex space-x-3">
-                      <span class="size-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-neutral-800 dark:text-neutral-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Custom reports
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="size-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-neutral-800 dark:text-neutral-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Product support
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="size-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-neutral-800 dark:text-neutral-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Activity reporting
-                      </span>
-                    </li>
-                  </ul>
-                  <!-- End List -->
-                </div>
-    
-                <div class="mt-5 grid grid-cols-2 gap-x-4 py-4 first:pt-0 last:pb-0">
-                  <div>
-                    <p class="text-sm text-gray-500 dark:text-neutral-500">Cancel anytime.</p>
-                    <p class="text-sm text-gray-500 dark:text-neutral-500">No card required.</p>
-                  </div>
-    
-                  <div class="flex justify-end">
-                    <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-800 dark:text-white dark:hover:bg-neutral-800">Start free trial</button>
-                  </div>
-                </div>
-              </div>
-              <!-- End Card -->
-            </div>
-    
-            <div>
-              <!-- Card -->
-              <div class="shadow-xl shadow-gray-200 p-5 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-neutral-900 dark:border-neutral-800 dark:shadow-gray-900/20">
-                <h3 class="text-xl font-bold text-gray-800 dark:text-neutral-200">Teams</h3>
-                <div class="text-sm text-gray-500 dark:text-neutral-500">For growing businesses.</div>
-                <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-white dark:text-neutral-800">Most popular</span>
-    
-                <div class="mt-5">
-                  <span class="text-6xl font-bold text-gray-800 dark:text-neutral-200">$36</span>
-                  <span class="text-lg font-bold text-gray-800 dark:text-neutral-200">.99</span>
-                  <span class="ms-3 text-gray-500 dark:text-neutral-500">USD / monthly</span>
-                </div>
-    
-                <div class="mt-5 grid sm:grid-cols-2 gap-y-2 py-4 first:pt-0 last:pb-0 sm:gap-x-6 sm:gap-y-0">
-                  <!-- List -->
-                  <ul class="space-y-2 text-sm sm:text-base">
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Up to 10 people
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Collect data
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Code extensibility
-                      </span>
-                    </li>
-                  </ul>
-                  <!-- End List -->
-    
-                  <!-- List -->
-                  <ul class="space-y-2 text-sm sm:text-base">
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Custom reports
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Product support
-                      </span>
-                    </li>
-    
-                    <li class="flex space-x-3">
-                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                        <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                      </span>
-                      <span class="text-gray-800 dark:text-neutral-200">
-                        Activity reporting
-                      </span>
-                    </li>
-                  </ul>
-                  <!-- End List -->
-                </div>
-    
-                <div class="mt-5 grid grid-cols-2 gap-x-4 py-4 first:pt-0 last:pb-0">
-                  <div>
-                    <p class="text-sm text-gray-500 dark:text-neutral-500">Cancel anytime.</p>
-                    <p class="text-sm text-gray-500 dark:text-neutral-500">No card required.</p>
-                  </div>
-    
-                  <div class="flex justify-end">
-                    <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">Start free trial</button>
-                  </div>
-                </div>
-              </div>
-              <!-- End Card -->
-            </div>
-          </div>
-          <!-- End Grid -->
-    
-          <!-- SVG Element -->
-          <div class="hidden md:block absolute top-0 end-0 translate-y-16 translate-x-16">
-            <svg class="w-16 h-auto text-orange-500" width="121" height="135" viewBox="0 0 121 135" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-              <path d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-              <path d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <!-- End SVG Element -->
-    
-          <!-- SVG Element -->
-          <div class="hidden md:block absolute bottom-0 start-0 translate-y-16 -translate-x-16">
-            <svg class="w-56 h-auto text-cyan-500" width="347" height="188" viewBox="0 0 347 188" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 82.4591C54.7956 92.8751 30.9771 162.782 68.2065 181.385C112.642 203.59 127.943 78.57 122.161 25.5053C120.504 2.2376 93.4028 -8.11128 89.7468 25.5053C85.8633 61.2125 130.186 199.678 180.982 146.248L214.898 107.02C224.322 95.4118 242.9 79.2851 258.6 107.02C274.299 134.754 299.315 125.589 309.861 117.539L343 93.4426" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <!-- End SVG Element -->
-        </div>
-    
-        <div class="mt-7 text-center">
-          <p class="text-xs text-gray-400">
-            Prices in USD. Taxes may apply.
-          </p>
-        </div>
-      </div>
+      </a>
+      <h2 class="font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl">
+        <span class="inline-block mb-2">Tables</span>
+        <div class="h-1 ml-auto duration-300 origin-left transform bg-purple-400 scale-x-30 group-hover:scale-x-100"></div>
+      </h2>
     </div>
-    <!-- End Features -->
-
-  </main>
-
-  <!-- Features -->
-  <div class="calculator max-w-2xl mx-auto p-6 bg-gray-50 shadow-xl mt-12 rounded-lg">
-
-    <h1 class="text-2xl font-semibold text-center mb-8 text-gray-800">Energy Calculator</h1>
-  
-    <div class="mb-5">
-  
-      <label for="energyInput" class="block text-gray-800 text-md font-medium mb-1">Energy Consumption:</label>
-  
-      <input type="number" id="energyInput" placeholder="Enter energy consumption" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-      <select id="energyUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="kWh">kWh</option>
-  
-        <option value="MWh">MWh</option>
-  
-      </select>
-  
-    </div>
-  
-    <div class="mb-5">
-  
-      <label for="costInput" class="block text-gray-800 text-md font-medium mb-1">Cost per Unit Energy:</label>
-  
-      <input type="number" id="costInput" placeholder="Enter cost per unit energy" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-      <select id="currency" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="USD">USD</option>
-  
-        <option value="EUR">EUR</option>
-  
-        <option value="GBP">GBP</option>
-  
-      </select>
-  
-    </div>
-  
-    <div class="mb-5">
-  
-      <label for="carbonInput" class="block text-gray-800 text-md font-medium mb-1">Carbon Emission Factor:</label>
-  
-      <input type="number" id="carbonInput" placeholder="Enter carbon emission factor" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-      <span class="text-gray-800">kg CO2/</span>
-  
-      <select id="carbonUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="kWh">kWh</option>
-  
-        <option value="MWh">MWh</option>
-  
-      </select>
-  
-    </div>
-  
-    <div class="mb-6">
-  
-      <label for="efficiencyInput" class="block text-gray-800 text-md font-medium mb-1">Efficiency (%):</label>
-  
-      <input type="number" id="efficiencyInput" placeholder="Enter efficiency (%)" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-    </div>
-  
-    <div class="mb-8">
-  
-      <label for="metricSelect" class="block text-gray-800 text-md font-medium mb-1">Select Metric:</label>
-  
-      <select id="metricSelect" class="block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="consumption">Energy Consumption</option>
-  
-        <option value="cost">Cost</option>
-  
-        <option value="carbon">Carbon Footprint</option>
-  
-        <option value="efficiency">Efficiency</option>
-  
-      </select>
-  
-    </div>
-  
-    <div id="result" class="mb-5 p-5 bg-gray-100 rounded-lg text-gray-800"></div>
-  
-    <button id="clearBtn" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline">Clear</button>
-  
+    <p class="w-full text-gray-300 lg:text-sm lg:max-w-md">
+      "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut perspiciatis unde omnis iste."
+    </p>
   </div>
-
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              const energyInput = document.getElementById("energyInput");
-              const energyUnit = document.getElementById("energyUnit");
-              const costInput = document.getElementById("costInput");
-              const currency = document.getElementById("currency");
-              const carbonInput = document.getElementById("carbonInput");
-              const carbonUnit = document.getElementById("carbonUnit");
-              const efficiencyInput = document.getElementById("efficiencyInput");
-              const metricSelect = document.getElementById("metricSelect");
-              const resultDiv = document.getElementById("result");
-              const clearBtn = document.getElementById("clearBtn");
-            
-              function convertEnergy(value, fromUnit, toUnit) {
-                if (fromUnit === toUnit) return value;
-                if (fromUnit === "kWh" && toUnit === "MWh") return value / 1000;
-                if (fromUnit === "MWh" && toUnit === "kWh") return value * 1000;
-                return value;
-              }
-            
-              function calculate() {
-                const energy = parseFloat(energyInput.value);
-                const cost = parseFloat(costInput.value);
-                const carbon = parseFloat(carbonInput.value);
-                const efficiency = parseFloat(efficiencyInput.value);
-            
-                if (isNaN(energy) || isNaN(cost) || isNaN(carbon) || isNaN(efficiency)) {
-                  resultDiv.textContent = "Please fill in all fields.";
-                  return;
-                }
-            
-                let convertedEnergy = convertEnergy(energy, energyUnit.value, "kWh");
-                let convertedCarbon = convertEnergy(carbon, carbonUnit.value, energyUnit.value);
-            
-                let result;
-                let details = "";
-            
-                switch (metricSelect.value) {
-                  case "consumption":
-                    result = energy;
-                    details = `Energy Consumption: ${energy} ${energyUnit.value}`;
-                    break;
-                  case "cost":
-                    result = convertedEnergy * cost;
-                    details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Cost per kWh: ${cost} ${currency.value}`;
-                    break;
-                  case "carbon":
-                    result = convertedEnergy * convertedCarbon;
-                    details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Carbon Emission Factor: ${convertedCarbon} kg CO2/${energyUnit.value}`;
-                    break;
-                  case "efficiency":
-                    result = (energy / efficiency) * 100;
-                    details = `Energy Consumption: ${energy} ${energyUnit.value}<br>Efficiency: ${efficiency}%`;
-                    break;
-                  default:
-                    result = 0;
-                    break;
-                }
-            
-                resultDiv.innerHTML = `Result: ${result.toFixed(2)} ${metricSelect.value === "cost" ? currency.value : metricSelect.value}<br>${details}`;
-              }
-            
-              function clearInputs() {
-                energyInput.value = '';
-                costInput.value = '';
-                carbonInput.value = '';
-                efficiencyInput.value = '';
-                resultDiv.textContent = '';
-              }
-            
-              [energyInput, costInput, carbonInput, efficiencyInput, energyUnit, carbonUnit, metricSelect].forEach(input => {
-                input.addEventListener("input", calculate);
-              });
-            
-              clearBtn.addEventListener("click", clearInputs);
-            });
-            </script>
-            
-          
-        </div>
-        <!-- End List -->
-      </div>
-    </div>
-    <!-- End Col -->
-  </div>
-  <!-- End Grid -->
-</div>
-<!-- End Features -->
-
-  <!-- Table Section -->
+  <div class="grid gap-8 row-gap-5 mb-8">
+    <div>
+         <!-- Table Section -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Card -->
   <div class="flex flex-col">
@@ -1375,8 +999,9 @@
   <!-- End Card -->
 </div>
 <!-- End Table Section -->
-
-<!-- Table Section -->
+</div>
+    <div>
+        <!-- Table Section -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Card -->
   <div class="flex flex-col">
@@ -1920,6 +1545,264 @@
   <!-- End Card -->
 </div>
 <!-- End Table Section -->
+
+
+
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">
+      See more
+      <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+</section>
+
+<section class="bg-neutral-800 bg-gradient-to-t from-black to-transparent">
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+    <div class="flex flex-col mb-16 sm:text-center">
+      <a href="/" class="mb-6 sm:mx-auto">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+          </svg>
+        </div>
+      </a>
+      <div class="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+          <span class="relative inline-block">
+            <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-gray-500 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+              <defs>
+                <pattern id="ec5d8ef5-b853-4714-b94f-df28ec98eeb7" x="0" y="0" width=".135" height=".30"><circle cx="1" cy="1" r=".7"></circle></pattern>
+              </defs>
+              <rect fill="url(#ec5d8ef5-b853-4714-b94f-df28ec98eeb7)" width="52" height="24"></rect>
+            </svg>
+            <span class="relative">The</span>
+          </span>
+          Calculator
+        </h2>
+        <p class="text-base text-gray-300 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
+      </div>
+    </div>
+    <div class="space-y-4">
+      
+<div class="calculator max-w-2xl mx-auto p-6 bg-gray-50 shadow-xl mt-12 rounded-lg">
+
+  <h1 class="text-2xl font-semibold text-center mb-8 text-gray-800">Energy Calculator</h1>
+
+  <div class="mb-5">
+
+    <label for="energyInput" class="block text-gray-800 text-md font-medium mb-1">Energy Consumption:</label>
+
+    <input type="number" id="energyInput" placeholder="Enter energy consumption" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+    <select id="energyUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="kWh">kWh</option>
+
+      <option value="MWh">MWh</option>
+
+      <option value="MWh">MW</option>
+
+      <option value="MWh">mAH</option>
+
+      <option value="MWh">eV</option>
+
+      <option value="MWh">g/m^2</option>
+
+      <option value="MWh">kWh/m^2</option>
+
+      <option value="MWh">btu/h</option>
+
+      <option value="MWh">kJ</option>
+
+    </select>
+
+  </div>
+
+  <div class="mb-5">
+
+    <label for="costInput" class="block text-gray-800 text-md font-medium mb-1">Cost per Unit Energy:</label>
+
+    <input type="number" id="costInput" placeholder="Enter cost per unit energy" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+    <select id="currency" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="USD">USD</option>
+
+      <option value="EUR">EUR</option>
+
+      <option value="GBP">GBP</option>
+
+    </select>
+
+  </div>
+
+  <div class="mb-5">
+
+    <label for="carbonInput" class="block text-gray-800 text-md font-medium mb-1">Carbon Emission Factor:</label>
+
+    <input type="number" id="carbonInput" placeholder="Enter carbon emission factor" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+    <span class="text-gray-800">kg CO2/</span>
+
+    <select id="carbonUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="kWh">kWh</option>
+
+      <option value="MWh">MWh</option>
+
+      <option value="MWh">MW</option>
+
+      <option value="MWh">mAH</option>
+
+      <option value="MWh">eV</option>
+
+      <option value="MWh">g/m^2</option>
+
+      <option value="MWh">kWh/m^2</option>
+
+      <option value="MWh">btu/h</option>
+
+      <option value="MWh">kJ</option>
+
+    </select>
+
+  </div>
+
+  <div class="mb-6">
+
+    <label for="efficiencyInput" class="block text-gray-800 text-md font-medium mb-1">Efficiency (%):</label>
+
+    <input type="number" id="efficiencyInput" placeholder="Enter efficiency (%)" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+  </div>
+
+  <div class="mb-8">
+
+    <label for="metricSelect" class="block text-gray-800 text-md font-medium mb-1">Select Metric:</label>
+
+    <select id="metricSelect" class="block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="consumption">Energy Consumption</option>
+
+      <option value="cost">Cost</option>
+
+      <option value="carbon">Carbon Footprint</option>
+
+      <option value="efficiency">Efficiency</option>
+
+    </select>
+
+  </div>
+
+  <div id="result" class="mb-5 p-5 bg-gray-100 rounded-lg text-gray-800"></div>
+
+  <button id="clearBtn" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline">Clear</button>
+
+</div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const energyInput = document.getElementById("energyInput");
+            const energyUnit = document.getElementById("energyUnit");
+            const costInput = document.getElementById("costInput");
+            const currency = document.getElementById("currency");
+            const carbonInput = document.getElementById("carbonInput");
+            const carbonUnit = document.getElementById("carbonUnit");
+            const efficiencyInput = document.getElementById("efficiencyInput");
+            const metricSelect = document.getElementById("metricSelect");
+            const resultDiv = document.getElementById("result");
+            const clearBtn = document.getElementById("clearBtn");
+          
+            function convertEnergy(value, fromUnit, toUnit) {
+              if (fromUnit === toUnit) return value;
+              if (fromUnit === "kWh" && toUnit === "MWh") return value / 1000;
+              if (fromUnit === "MWh" && toUnit === "kWh") return value * 1000;
+              return value;
+            }
+          
+            function calculate() {
+              const energy = parseFloat(energyInput.value);
+              const cost = parseFloat(costInput.value);
+              const carbon = parseFloat(carbonInput.value);
+              const efficiency = parseFloat(efficiencyInput.value);
+          
+              if (isNaN(energy) || isNaN(cost) || isNaN(carbon) || isNaN(efficiency)) {
+                resultDiv.textContent = "Please fill in all fields.";
+                return;
+              }
+          
+              let convertedEnergy = convertEnergy(energy, energyUnit.value, "kWh");
+              let convertedCarbon = convertEnergy(carbon, carbonUnit.value, energyUnit.value);
+          
+              let result;
+              let details = "";
+          
+              switch (metricSelect.value) {
+                case "consumption":
+                  result = energy;
+                  details = `Energy Consumption: ${energy} ${energyUnit.value}`;
+                  break;
+                case "cost":
+                  result = convertedEnergy * cost;
+                  details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Cost per kWh: ${cost} ${currency.value}`;
+                  break;
+                case "carbon":
+                  result = convertedEnergy * convertedCarbon;
+                  details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Carbon Emission Factor: ${convertedCarbon} kg CO2/${energyUnit.value}`;
+                  break;
+                case "efficiency":
+                  result = (energy / efficiency) * 100;
+                  details = `Energy Consumption: ${energy} ${energyUnit.value}<br>Efficiency: ${efficiency}%`;
+                  break;
+                default:
+                  result = 0;
+                  break;
+              }
+          
+              resultDiv.innerHTML = `Result: ${result.toFixed(2)} ${metricSelect.value === "cost" ? currency.value : metricSelect.value}<br>${details}`;
+            }
+          
+            function clearInputs() {
+              energyInput.value = '';
+              costInput.value = '';
+              carbonInput.value = '';
+              efficiencyInput.value = '';
+              resultDiv.textContent = '';
+            }
+          
+            [energyInput, costInput, carbonInput, efficiencyInput, energyUnit, carbonUnit, metricSelect].forEach(input => {
+              input.addEventListener("input", calculate);
+            });
+          
+            clearBtn.addEventListener("click", clearInputs);
+          });
+          </script>
+          
+        
+      </div>
+      <!-- End List -->
+    </section>
+  </div>
+  <!-- End Col -->
+</div>
+<!-- End Grid -->
+</div>
+<!-- End Features -->
+</section>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+
 
 
 
