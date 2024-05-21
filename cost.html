@@ -9,78 +9,81 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     </head>
-<body>
+<body class="bg-neutral-800">
     <!-- ========== MAIN CONTENT ========== -->
-<main id="content" role="main">
-    <div class="overflow-hidden">
       <!-- Header -->
-      <header class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 items-center justify-between">
-            <div class="md:flex md:items-center md:gap-12">
-              <a class="block text-emerald-600 text-3xl font-extrabold" href="index.html">
-                <span class="sr-only">Home</span>
-                EcoNest
-              </a>
-            </div>
-      
-            <div class="hidden md:block">
-              <nav aria-label="Global">
-                <ul class="flex items-center gap-6 text-sm">
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="index.html"> Home </a>
-                  </li>
-      
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="cost.html"> Cost </a>
-                  </li>
-      
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="energy.html"> Energy </a>
-                  </li>
-      
-                  <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="sources.html"> Sources </a>
-                  </li>
+      <header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+        <nav class="relative max-w-[66rem] w-full bg-neutral-800 rounded-[28px] py-3 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto" aria-label="Global">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex-none flex items-center rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80 text-white" href="../../templates/agency/index.html" aria-label="Preline">
+              <img class="w-10 h-10 mr-2" src="https://img.icons8.com/pulsar-gradient/96/tree.png" alt="tree"/>
+              <span class="text-lg md:text-2xl pt-1">EcoNest</span>
+            </a>
+            <!-- End Logo -->
     
-                </ul>
-              </nav>
+            <div class="md:hidden">
+              <button type="button" class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="3" x2="21" y1="6" y2="6" />
+                  <line x1="3" x2="21" y1="12" y2="12" />
+                  <line x1="3" x2="21" y1="18" y2="18" />
+                </svg>
+                <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+              </button>
             </div>
-      
-            <div class="flex items-center gap-4">
-              <div class="sm:flex sm:gap-4">
-      
-                <div class="hidden sm:flex">
-                  <a
-                    class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                    href="cost.html"
-                  >
-                    Take Action
-                  </a>
-                </div>
-              </div>
-      
-              <div class="block md:hidden">
-                <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </div>
+    
+          <!-- Collapse -->
+          <div id="navbar-collapse" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="index.html" aria-current="page">Home</a>
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="cost.html">Cost</a>
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="energy.html">Energy</a>
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="community.html">Community</a>
+    
+    
+    
+              <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:py-0.5">
+                <button type="button" class="flex items-center w-full text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300">
+                  Blog
+                  <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6" />
                   </svg>
                 </button>
+    
+                <div id="dropdown" class="z-10 hidden bg-black divide-y divide-gray-100 rounded-lg shadow w-44">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog 3</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <a class="text-sm text-white hover:text-neutral-300 md:py-4 focus:outline-none focus:text-neutral-300" href="sources.html">References</a>
+    
+              <div>
+                <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#39FF14] font-medium text-sm text-neutral-800 rounded-full focus:outline-none" href="outage.html">
+                  Report Outage
+                </a>
               </div>
             </div>
           </div>
-        </div>
+          <!-- End Collapse -->
+        </nav>
       </header>
-
       <!-- Approach -->
-<div class="bg-neutral-900">
+<div class="bg-neutral-800 bg-gradient-to-t from-black to-transparent">
   <!-- Approach -->
   <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
     <!-- Title -->
@@ -215,9 +218,8 @@
 <!-- End Approach -->
       
     
-
-      <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<section class="bg-neutral-800 bg-gradient-to-b from-black to-transparent">
+<section class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div class="relative p-6 md:p-16">
     <!-- Grid -->
     <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
@@ -331,218 +333,33 @@
     </div>
     <!-- End Background Color -->
   </div>
-</div>
+</section>
 
+  
 
-  </main>
-
-  <!-- Features -->
-  <div class="calculator max-w-2xl mx-auto p-6 bg-gray-50 shadow-xl mt-12 rounded-lg">
-
-    <h1 class="text-2xl font-semibold text-center mb-8 text-gray-800">Energy Calculator</h1>
-  
-    <div class="mb-5">
-  
-      <label for="energyInput" class="block text-gray-800 text-md font-medium mb-1">Energy Consumption:</label>
-  
-      <input type="number" id="energyInput" placeholder="Enter energy consumption" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-      <select id="energyUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="kWh">kWh</option>
-  
-        <option value="MWh">MWh</option>
-
-        <option value="MWh">MW</option>
-
-        <option value="MWh">mAH</option>
-
-        <option value="MWh">eV</option>
-
-        <option value="MWh">g/m^2</option>
-
-        <option value="MWh">kWh/m^2</option>
-
-        <option value="MWh">btu/h</option>
-
-        <option value="MWh">kJ</option>
-  
-      </select>
-  
-    </div>
-  
-    <div class="mb-5">
-  
-      <label for="costInput" class="block text-gray-800 text-md font-medium mb-1">Cost per Unit Energy:</label>
-  
-      <input type="number" id="costInput" placeholder="Enter cost per unit energy" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-      <select id="currency" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="USD">USD</option>
-  
-        <option value="EUR">EUR</option>
-  
-        <option value="GBP">GBP</option>
-  
-      </select>
-  
-    </div>
-  
-    <div class="mb-5">
-  
-      <label for="carbonInput" class="block text-gray-800 text-md font-medium mb-1">Carbon Emission Factor:</label>
-  
-      <input type="number" id="carbonInput" placeholder="Enter carbon emission factor" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-      <span class="text-gray-800">kg CO2/</span>
-  
-      <select id="carbonUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="kWh">kWh</option>
-  
-        <option value="MWh">MWh</option>
-
-        <option value="MWh">MW</option>
-
-        <option value="MWh">mAH</option>
-
-        <option value="MWh">eV</option>
-
-        <option value="MWh">g/m^2</option>
-
-        <option value="MWh">kWh/m^2</option>
-
-        <option value="MWh">btu/h</option>
-
-        <option value="MWh">kJ</option>
-  
-      </select>
-  
-    </div>
-  
-    <div class="mb-6">
-  
-      <label for="efficiencyInput" class="block text-gray-800 text-md font-medium mb-1">Efficiency (%):</label>
-  
-      <input type="number" id="efficiencyInput" placeholder="Enter efficiency (%)" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
-  
-    </div>
-  
-    <div class="mb-8">
-  
-      <label for="metricSelect" class="block text-gray-800 text-md font-medium mb-1">Select Metric:</label>
-  
-      <select id="metricSelect" class="block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-  
-        <option value="consumption">Energy Consumption</option>
-  
-        <option value="cost">Cost</option>
-  
-        <option value="carbon">Carbon Footprint</option>
-  
-        <option value="efficiency">Efficiency</option>
-  
-      </select>
-  
-    </div>
-  
-    <div id="result" class="mb-5 p-5 bg-gray-100 rounded-lg text-gray-800"></div>
-  
-    <button id="clearBtn" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline">Clear</button>
-  
-  </div>
-
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              const energyInput = document.getElementById("energyInput");
-              const energyUnit = document.getElementById("energyUnit");
-              const costInput = document.getElementById("costInput");
-              const currency = document.getElementById("currency");
-              const carbonInput = document.getElementById("carbonInput");
-              const carbonUnit = document.getElementById("carbonUnit");
-              const efficiencyInput = document.getElementById("efficiencyInput");
-              const metricSelect = document.getElementById("metricSelect");
-              const resultDiv = document.getElementById("result");
-              const clearBtn = document.getElementById("clearBtn");
-            
-              function convertEnergy(value, fromUnit, toUnit) {
-                if (fromUnit === toUnit) return value;
-                if (fromUnit === "kWh" && toUnit === "MWh") return value / 1000;
-                if (fromUnit === "MWh" && toUnit === "kWh") return value * 1000;
-                return value;
-              }
-            
-              function calculate() {
-                const energy = parseFloat(energyInput.value);
-                const cost = parseFloat(costInput.value);
-                const carbon = parseFloat(carbonInput.value);
-                const efficiency = parseFloat(efficiencyInput.value);
-            
-                if (isNaN(energy) || isNaN(cost) || isNaN(carbon) || isNaN(efficiency)) {
-                  resultDiv.textContent = "Please fill in all fields.";
-                  return;
-                }
-            
-                let convertedEnergy = convertEnergy(energy, energyUnit.value, "kWh");
-                let convertedCarbon = convertEnergy(carbon, carbonUnit.value, energyUnit.value);
-            
-                let result;
-                let details = "";
-            
-                switch (metricSelect.value) {
-                  case "consumption":
-                    result = energy;
-                    details = `Energy Consumption: ${energy} ${energyUnit.value}`;
-                    break;
-                  case "cost":
-                    result = convertedEnergy * cost;
-                    details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Cost per kWh: ${cost} ${currency.value}`;
-                    break;
-                  case "carbon":
-                    result = convertedEnergy * convertedCarbon;
-                    details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Carbon Emission Factor: ${convertedCarbon} kg CO2/${energyUnit.value}`;
-                    break;
-                  case "efficiency":
-                    result = (energy / efficiency) * 100;
-                    details = `Energy Consumption: ${energy} ${energyUnit.value}<br>Efficiency: ${efficiency}%`;
-                    break;
-                  default:
-                    result = 0;
-                    break;
-                }
-            
-                resultDiv.innerHTML = `Result: ${result.toFixed(2)} ${metricSelect.value === "cost" ? currency.value : metricSelect.value}<br>${details}`;
-              }
-            
-              function clearInputs() {
-                energyInput.value = '';
-                costInput.value = '';
-                carbonInput.value = '';
-                efficiencyInput.value = '';
-                resultDiv.textContent = '';
-              }
-            
-              [energyInput, costInput, carbonInput, efficiencyInput, energyUnit, carbonUnit, metricSelect].forEach(input => {
-                input.addEventListener("input", calculate);
-              });
-            
-              clearBtn.addEventListener("click", clearInputs);
-            });
-            </script>
-            
-          
+<section class="bg-neutral-800 bg-gradient-to-b from-green-950 to-transparent">
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="flex flex-col w-full mb-6 lg:justify-between lg:flex-row md:mb-8">
+    <div class="pl-16 flex items-center mb-5 md:mb-6 group lg:max-w-xl">
+      <a href="/" aria-label="Item" class="mr-3">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-indigo-50">
+          <svg class="w-12 h-12 text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+          </svg>
         </div>
-        <!-- End List -->
-      </div>
+      </a>
+      <h2 class="font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl">
+        <span class="inline-block mb-2">Tables</span>
+        <div class="h-1 ml-auto duration-300 origin-left transform bg-purple-400 scale-x-30 group-hover:scale-x-100"></div>
+      </h2>
     </div>
-    <!-- End Col -->
+    <p class="w-full text-gray-300 lg:text-sm lg:max-w-md">
+      "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut perspiciatis unde omnis iste."
+    </p>
   </div>
-  <!-- End Grid -->
-</div>
-<!-- End Features -->
-
-  <!-- Table Section -->
+  <div class="grid gap-8 row-gap-5 mb-8">
+    <div>
+         <!-- Table Section -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Card -->
   <div class="flex flex-col">
@@ -1182,8 +999,9 @@
   <!-- End Card -->
 </div>
 <!-- End Table Section -->
-
-<!-- Table Section -->
+</div>
+    <div>
+        <!-- Table Section -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Card -->
   <div class="flex flex-col">
@@ -1727,6 +1545,264 @@
   <!-- End Card -->
 </div>
 <!-- End Table Section -->
+
+
+
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">
+      See more
+      <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+</section>
+
+<section class="bg-neutral-800 bg-gradient-to-t from-black to-transparent">
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+    <div class="flex flex-col mb-16 sm:text-center">
+      <a href="/" class="mb-6 sm:mx-auto">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+          </svg>
+        </div>
+      </a>
+      <div class="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+          <span class="relative inline-block">
+            <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-gray-500 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+              <defs>
+                <pattern id="ec5d8ef5-b853-4714-b94f-df28ec98eeb7" x="0" y="0" width=".135" height=".30"><circle cx="1" cy="1" r=".7"></circle></pattern>
+              </defs>
+              <rect fill="url(#ec5d8ef5-b853-4714-b94f-df28ec98eeb7)" width="52" height="24"></rect>
+            </svg>
+            <span class="relative">The</span>
+          </span>
+          Calculator
+        </h2>
+        <p class="text-base text-gray-300 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
+      </div>
+    </div>
+    <div class="space-y-4">
+      
+<div class="calculator max-w-2xl mx-auto p-6 bg-gray-50 shadow-xl mt-12 rounded-lg">
+
+  <h1 class="text-2xl font-semibold text-center mb-8 text-gray-800">Energy Calculator</h1>
+
+  <div class="mb-5">
+
+    <label for="energyInput" class="block text-gray-800 text-md font-medium mb-1">Energy Consumption:</label>
+
+    <input type="number" id="energyInput" placeholder="Enter energy consumption" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+    <select id="energyUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="kWh">kWh</option>
+
+      <option value="MWh">MWh</option>
+
+      <option value="MWh">MW</option>
+
+      <option value="MWh">mAH</option>
+
+      <option value="MWh">eV</option>
+
+      <option value="MWh">g/m^2</option>
+
+      <option value="MWh">kWh/m^2</option>
+
+      <option value="MWh">btu/h</option>
+
+      <option value="MWh">kJ</option>
+
+    </select>
+
+  </div>
+
+  <div class="mb-5">
+
+    <label for="costInput" class="block text-gray-800 text-md font-medium mb-1">Cost per Unit Energy:</label>
+
+    <input type="number" id="costInput" placeholder="Enter cost per unit energy" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+    <select id="currency" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="USD">USD</option>
+
+      <option value="EUR">EUR</option>
+
+      <option value="GBP">GBP</option>
+
+    </select>
+
+  </div>
+
+  <div class="mb-5">
+
+    <label for="carbonInput" class="block text-gray-800 text-md font-medium mb-1">Carbon Emission Factor:</label>
+
+    <input type="number" id="carbonInput" placeholder="Enter carbon emission factor" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+    <span class="text-gray-800">kg CO2/</span>
+
+    <select id="carbonUnit" class="mt-3 block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="kWh">kWh</option>
+
+      <option value="MWh">MWh</option>
+
+      <option value="MWh">MW</option>
+
+      <option value="MWh">mAH</option>
+
+      <option value="MWh">eV</option>
+
+      <option value="MWh">g/m^2</option>
+
+      <option value="MWh">kWh/m^2</option>
+
+      <option value="MWh">btu/h</option>
+
+      <option value="MWh">kJ</option>
+
+    </select>
+
+  </div>
+
+  <div class="mb-6">
+
+    <label for="efficiencyInput" class="block text-gray-800 text-md font-medium mb-1">Efficiency (%):</label>
+
+    <input type="number" id="efficiencyInput" placeholder="Enter efficiency (%)" class="shadow-sm border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:ring-blue-500 focus:border-blue-500">
+
+  </div>
+
+  <div class="mb-8">
+
+    <label for="metricSelect" class="block text-gray-800 text-md font-medium mb-1">Select Metric:</label>
+
+    <select id="metricSelect" class="block w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+
+      <option value="consumption">Energy Consumption</option>
+
+      <option value="cost">Cost</option>
+
+      <option value="carbon">Carbon Footprint</option>
+
+      <option value="efficiency">Efficiency</option>
+
+    </select>
+
+  </div>
+
+  <div id="result" class="mb-5 p-5 bg-gray-100 rounded-lg text-gray-800"></div>
+
+  <button id="clearBtn" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline">Clear</button>
+
+</div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const energyInput = document.getElementById("energyInput");
+            const energyUnit = document.getElementById("energyUnit");
+            const costInput = document.getElementById("costInput");
+            const currency = document.getElementById("currency");
+            const carbonInput = document.getElementById("carbonInput");
+            const carbonUnit = document.getElementById("carbonUnit");
+            const efficiencyInput = document.getElementById("efficiencyInput");
+            const metricSelect = document.getElementById("metricSelect");
+            const resultDiv = document.getElementById("result");
+            const clearBtn = document.getElementById("clearBtn");
+          
+            function convertEnergy(value, fromUnit, toUnit) {
+              if (fromUnit === toUnit) return value;
+              if (fromUnit === "kWh" && toUnit === "MWh") return value / 1000;
+              if (fromUnit === "MWh" && toUnit === "kWh") return value * 1000;
+              return value;
+            }
+          
+            function calculate() {
+              const energy = parseFloat(energyInput.value);
+              const cost = parseFloat(costInput.value);
+              const carbon = parseFloat(carbonInput.value);
+              const efficiency = parseFloat(efficiencyInput.value);
+          
+              if (isNaN(energy) || isNaN(cost) || isNaN(carbon) || isNaN(efficiency)) {
+                resultDiv.textContent = "Please fill in all fields.";
+                return;
+              }
+          
+              let convertedEnergy = convertEnergy(energy, energyUnit.value, "kWh");
+              let convertedCarbon = convertEnergy(carbon, carbonUnit.value, energyUnit.value);
+          
+              let result;
+              let details = "";
+          
+              switch (metricSelect.value) {
+                case "consumption":
+                  result = energy;
+                  details = `Energy Consumption: ${energy} ${energyUnit.value}`;
+                  break;
+                case "cost":
+                  result = convertedEnergy * cost;
+                  details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Cost per kWh: ${cost} ${currency.value}`;
+                  break;
+                case "carbon":
+                  result = convertedEnergy * convertedCarbon;
+                  details = `Energy Consumption: ${convertedEnergy.toFixed(2)} kWh<br>Carbon Emission Factor: ${convertedCarbon} kg CO2/${energyUnit.value}`;
+                  break;
+                case "efficiency":
+                  result = (energy / efficiency) * 100;
+                  details = `Energy Consumption: ${energy} ${energyUnit.value}<br>Efficiency: ${efficiency}%`;
+                  break;
+                default:
+                  result = 0;
+                  break;
+              }
+          
+              resultDiv.innerHTML = `Result: ${result.toFixed(2)} ${metricSelect.value === "cost" ? currency.value : metricSelect.value}<br>${details}`;
+            }
+          
+            function clearInputs() {
+              energyInput.value = '';
+              costInput.value = '';
+              carbonInput.value = '';
+              efficiencyInput.value = '';
+              resultDiv.textContent = '';
+            }
+          
+            [energyInput, costInput, carbonInput, efficiencyInput, energyUnit, carbonUnit, metricSelect].forEach(input => {
+              input.addEventListener("input", calculate);
+            });
+          
+            clearBtn.addEventListener("click", clearInputs);
+          });
+          </script>
+          
+        
+      </div>
+      <!-- End List -->
+    </section>
+  </div>
+  <!-- End Col -->
+</div>
+<!-- End Grid -->
+</div>
+<!-- End Features -->
+</section>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+
 
 
 
