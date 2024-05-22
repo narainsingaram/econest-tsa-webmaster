@@ -25,7 +25,7 @@
         <!-- End Logo -->
 
         <div class="md:hidden">
-          <button type="button" class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
+          <button type="button" id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"  class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
             <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="3" x2="21" y1="6" y2="6" />
               <line x1="3" x2="21" y1="12" y2="12" />
@@ -37,6 +37,34 @@
             </svg>
           </button>
         </div>
+        <div id="dropdown1" class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-black">
+          <ul class="py-2 text-sm text-gray-700 text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white hover:text-white">Home</a>
+            </li>
+            <li>
+              <a href="cost.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white  hover:text-white">Cost</a>
+            </li>
+            <li>
+              <a href="energy.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white  hover:text-white">Energy</a>
+            </li>
+            <li>
+              <a href="community.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white hover:text-white">Community</a>
+            </li>
+            <li>
+              <a href="blog1.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">Solar Success</a>
+            </li>
+            <li>
+              <a href="blog2.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">Wind Power</a>
+            </li>
+            <li>
+              <a href="blog3.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">Trash2Treasure</a>
+            </li>
+            <li>
+              <a href="sources.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">References</a>
+            </li>
+          </ul>
+      </div>
       </div>
 
       <!-- Collapse -->
@@ -215,23 +243,6 @@
 
 
 <!-- End Hero -->
-
-
-
-<!-- <section id="video" class="bg-green-50">
-    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">The Promise of Clean Energy</h2>
-            <p class="mb-4"> As environmental concerns grow and fossil fuels decline, clean energy has become vital. Unlike traditional energy sources that pollute and will run out, renewable sources like solar, wind, hydroelectric, and geothermal harness nature's power sustainably. Transitioning to clean energy not only preserves the environment but paves the way for healthier future generations. From flipping light switches to exploring renewable options, small acts contribute to a more sustainable future. Clean energy offers a promising solution for society's energy needs while minimizing environmental harm.</p>
-        </div>
-        <div class="mb-4">
-            <video class="w-full h-full border border-gray-200 rounded-lg" controls>
-                <source src="./assets\video\Renewable Energy Sources - Types of Energy for Kids.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
-</section> -->
 
 
 <section class="bg-neutral-800 bg-gradient-to-t from-black to-transparent text-white">
