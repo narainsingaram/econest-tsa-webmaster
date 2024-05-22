@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Sources Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
       <!-- End Logo -->
 
       <div class="md:hidden">
-        <button type="button" class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
+        <button type="button" id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1"  class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
           <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" x2="21" y1="6" y2="6" />
             <line x1="3" x2="21" y1="12" y2="12" />
@@ -43,6 +43,33 @@
           </svg>
         </button>
       </div>
+      <div id="dropdown1" class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-black">
+        <ul class="py-2 text-sm text-gray-700 text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white hover:text-white">Home</a>
+          </li>
+          <li>
+            <a href="cost.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white  hover:text-white">Cost</a>
+          </li>
+          <li>
+            <a href="energy.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white  hover:text-white">Energy</a>
+          </li>
+          <li>
+            <a href="community.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white hover:text-white">Community</a>
+          </li>
+          <li>
+            <a href="blog1.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">Solar Success</a>
+          </li>
+          <li>
+            <a href="blog2.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">Wind Power</a>
+          </li>
+          <li>
+            <a href="blog3.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">Trash2Treasure</a>
+          </li>
+          <li>
+            <a href="sources.html" class="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 text-white">References</a>
+          </li>
+        </ul>
     </div>
 
     <!-- Collapse -->
@@ -98,10 +125,23 @@
       <div class="p-6 bg-white border-b border-gray-200">
         <div class="mb-4">
           <h2 class="font-semibold text-xl text-gray-800 leading-tight">Important Links</h2>
-          <div class="mt-2">
-            <a class="text-indigo-600 hover:text-indigo-900" href="https://docs.google.com/document/d/11f2oPEFabV9G-1ygAmlZQvlnuV47SpOyiMaYkhjgZZc/edit?usp=sharing">
+          <div class='mt-2'>
+             <a class="text-indigo-600 hover:text-indigo-900" href="https://docs.google.com/document/d/11f2oPEFabV9G-1ygAmlZQvlnuV47SpOyiMaYkhjgZZc/edit?usp=sharing">
                 Documentation
             </a>
+          </div>
+          <div class="mt-2">
+            <a href="https://drive.google.com/file/d/1bHvqpP7tlxRDkIROgtFVUAfbfYBrHORl/view?usp=drive_link" class="text-indigo-600 hover:text-indigo-900">STUDENT COPYRIGHT CHECKLIST</a>
+          </div>
+          <div class="mt-2">
+            <a href="https://drive.google.com/file/d/1ye3wMQexivCkRKxpjADcvI9XXdRSkQE2/view?usp=drive_link" class="text-indigo-600 hover:text-indigo-900">Work Log 1</a>
+          </div>
+          <div class="mt-2">
+            <a href="https://drive.google.com/file/d/1Y1AAEgd3zb04er_YS35bKcJnXjxJGmHx/view?usp=drive_link" class="text-indigo-600 hover:text-indigo-900">Work Log 2</a>
+          </div>
+          <div class="mt-2">
+            <a href="https://drive.google.com/file/d/1ZwDIJqeWepP93z5j11qJeq84OWymueh-/view?usp=drive_link" class="text-indigo-600 hover:text-indigo-900">Work Log 3</a>
+
           </div>
           <div class="mt-2">
             <a href="https://drive.google.com/file/d/1bHvqpP7tlxRDkIROgtFVUAfbfYBrHORl/view?usp=drive_link" class="text-indigo-600 hover:text-indigo-900">STUDENT COPYRIGHT CHECKLIST</a>
@@ -133,6 +173,19 @@
             <li><a href="https://sigmaearth.com/types-of-environment-a-complete-guide/" target="_blank" class="text-indigo-600 hover:text-indigo-900">Types Of Environment: A Complete Guide - Sigma Earth</a></li>
             <li><a href="https://www.un.org/en/climatechange/what-is-renewable-energy" target="_blank" class="text-indigo-600 hover:text-indigo-900">What is renewable energy? - United Nations</a></li>
             <li><a href="https://ratedpower.com/blog/evolution-renewable-energy/" target="_blank" class="text-indigo-600 hover:text-indigo-900">Evolution of renewable energy: How energy use has changed over time</a></li>
+            <li><a href="https://www.clientearth.org/latest/news/fossil-fuels-and-climate-change-the-facts/#:~:text=When%20fossil%20fuels%20are%20burned,temperature%20has%20increased%20by%201C." target="_blank" class="text-indigo-600 hover:text-indigo-900">Fossil Fuels and Climate Change: The Facts - ClientEarth</a></li>
+<li><a href="https://www.epa.gov/nutrientpollution/sources-and-solutions-fossil-fuels" target="_blank" class="text-indigo-600 hover:text-indigo-900">Sources and Solutions for Fossil Fuels - EPA</a></li>
+<li><a href="https://www.georgiapower.com/residential/billing-and-rate-plans/billing-options/understanding-your-bill/interactive-sample-bill.html" target="_blank" class="text-indigo-600 hover:text-indigo-900">Understanding Your Bill - Georgia Power</a></li>
+<li><a href="https://companiesmarketcap.com/renewable-energy/largest-companies-by-market-cap/" target="_blank" class="text-indigo-600 hover:text-indigo-900">Largest Renewable Energy Companies by Market Cap - Companies Market Cap</a></li>
+<li><a href="https://smartwateronline.com/news/how-energy-efficiency-and-sustainability-go-hand-in-hand" target="_blank" class="text-indigo-600 hover:text-indigo-900">How Energy Efficiency and Sustainability Go Hand-in-Hand - Smart Water Online</a></li>
+<li><a href="https://dahmemechanical.com/news/high-efficiency-hvac-system-benefits/#:~:text=What%20Is%20a%20High%2DEfficiency,conditioning%20and%20heat%20pump%20cooling." target="_blank" class="text-indigo-600 hover:text-indigo-900">Benefits of High-Efficiency HVAC Systems - Dahme Mechanical</a></li>
+<li><a href="https://www.atticsolutionsusa.com/insulation-and-your-homes-carbon-footprint/#:~:text=Since%20insulation%20goes%20a%20long,and%20blown%2Din%20cellulose%20products." target="_blank" class="text-indigo-600 hover:text-indigo-900">Insulation and Your Home's Carbon Footprint - Attic Solutions USA</a></li>
+<li><a href="https://coolproatlanta.com/climate-change-hvac/#:~:text=Reduced%20Energy%20Consumption%3A%20High%2Defficiency,or%20non%2Drenewable%20energy%20sources." target="_blank" class="text-indigo-600 hover:text-indigo-900">Climate Change and HVAC Systems - Cool Pro Atlanta</a></li>
+<li><a href="https://peteralkema.com/smart-homes-and-home-automation-as-energy-industry-disruptors/#:~:text=Homeowners%20can%20monitor%20their%20renewable,to%20a%20more%20sustainable%20future." target="_blank" class="text-indigo-600 hover:text-indigo-900">Smart Homes and Home Automation as Energy Industry Disruptors - Peter Alkema</a></li>
+<li><a href="https://www.un.org/en/climatechange/raising-ambition/renewable-energy#:~:text=Renewable%20energy%20sources%2C%20such%20as,than%20coal%2C%20oil%20or%20gas." target="_blank" class="text-indigo-600 hover:text-indigo-900">Renewable Energy - United Nations</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0196890423003813" target="_blank" class="text-indigo-600 hover:text-indigo-900">Environmental Impacts of Renewable Energy - ScienceDirect</a></li>
+<li><a href="https://vertenergygroup.com/how-can-energy-audits-support-the-transition-to-renewable-energy-sources/" target="_blank" class="text-indigo-600 hover:text-indigo-900">How Can Energy Audits Support the Transition to Renewable Energy Sources? - Vert Energy Group</a></li>
+
   </ul>
           </ul>
         </div>
